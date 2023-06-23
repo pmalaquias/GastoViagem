@@ -10,6 +10,7 @@
 
     <!--Distância-->
     <EditText
+        android:id="@+id/edit_distance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/distance"
@@ -24,6 +25,7 @@
 
     <!--Preço-->
     <EditText
+        android:id="@+id/edit_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/price"
@@ -38,6 +40,7 @@
 
     <!--Autonomia-->
     <EditText
+        android:id="@+id/edit_autonomy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/autonomy"
@@ -60,6 +63,7 @@
         android:textAllCaps="true"/>
 
     <TextView
+        android:id="@+id/text_total_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -69,6 +73,7 @@
         android:textSize="34sp" />
 
     <Button
+        android:id="@+id/button_calculate"
         android:layout_marginTop="32dp"
         android:textSize="24sp"
         android:padding="16dp"
