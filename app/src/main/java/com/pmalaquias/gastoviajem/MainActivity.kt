@@ -10,6 +10,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding
 
+    /**
+     * Função responsável por fazer a criação da Activity
+    * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -18,12 +21,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.buttonCalculate.setOnClickListener(this)
     }
 
+
+    /**
+     * Função responsável por tratar qualquer evento de  click nos elementos
+    * */
     override fun onClick(view: View) {
         if (view.id == R.id.button_calculate) {
             calculate()
         }
     }
 
+    /**
+     * Função responsável por validar os dados informado pelo usuario
+    * */
     private fun isValid(): Boolean {
         return binding.editDistance.text.toString() != "" &&
                binding.editPrice.text.toString() != "" &&
@@ -31,6 +41,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                binding.editAutonomy.text.toString().toFloat() != 0f
     }
 
+    /**
+     * Função responsavel par calcular o curto da viagem
+    * */
     private fun calculate() {
 
         if(isValid()) {
@@ -42,10 +55,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val totalValueStr = "R$ ${"%.2f".format(totalValue)} "
             binding.textTotalValue.text = totalValueStr
         }else{
-
-        // toast notification
-        Toast.makeText(this,R.string.validation_fill_all_fields,Toast.LENGTH_LONG).show()
-
+            // toast notification
+            Toast.makeText(this,R.string.validation_fill_all_fields,Toast.LENGTH_LONG).show()
         }
 
     }
