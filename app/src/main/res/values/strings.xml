@@ -9,4 +9,6 @@
     <string name="total_in_kilometers">Total em Quilometros</string>
     <string name="total_expense">Seu Gasto total será de</string>
     <string name="total">R$ 0</string>
+
+    <string name="validation_fill_all_fields">Preencha todos os campos.</string>
 </resources>
