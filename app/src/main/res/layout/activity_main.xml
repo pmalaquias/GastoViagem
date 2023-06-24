@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/distance"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:paddingTop="8dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/price"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:paddingTop="16dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/autonomy"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:paddingTop="16dp"/>
     <TextView
         android:layout_width="match_parent"
